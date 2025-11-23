@@ -151,6 +151,7 @@ Build:
 ```bash
 docker build -f Dockerfile -t eclipse-temurin-hardened .
 ```
+![Alt text](images/docker-images.png)
 
 ✅ **Achieved:**
 - Reduced image size from ~414 MB to ~133 MB
@@ -167,7 +168,9 @@ trivy image eclipse-temurin-hardened:17
 ```
 
 **Vulnerabilities before hardening:** 84  
+![Alt text](images/vulnerability-scan-before.png)
 **Vulnerabilities after hardening:** 5
+![Alt text](images/vulnerability-scan-after.png)
 
 ✅ **Achieved:**
 - Found and fixed known CVEs
